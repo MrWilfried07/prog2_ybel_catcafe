@@ -19,6 +19,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.mockito/mockito-core
     testImplementation 'org.mockito:mockito-core:5.13.0'
+    testImplementation 'junit:junit:4.13.2'
 }
 
 
@@ -35,7 +36,7 @@ sourceSets.test.java.srcDirs = ['src/test/java/']
 
 
 test {
-    useJUnitPlatform()
+    useJUnit()
 }
 
 checkstyle {
